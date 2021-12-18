@@ -1,0 +1,81 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    position:relative;
+    width:100vw;
+    min-height:100vh;
+    margin:0;
+    padding-bottom:5rem;
+    overflow-x:hidden;
+    background-color: #ddd;
+}
+.topBar{
+    width:100%;
+    padding:1.5rem;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-flow:row wrap;
+    background-color: #2BC2F5;
+}
+.title{
+    margin:0;
+    font-family: 'Mogra', cursive;
+    font-size:1.3em;
+    color:#fff;
+}
+.mainContent{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:column wrap;
+}
+.placeName{
+    width:max(50%,15rem);
+    margin-top:5rem;
+    padding:1.5rem;
+    outline:none;
+    border:none;
+    border-radius:10px;
+    font-family:cursive;
+}
+.page-footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding:1.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#2BC2F5;
+    font-size:2rem;
+}
+.social-icon{
+    color:#fff;
+    margin:0 .5rem;
+}
+.weather-cardContainer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:row wrap;
+    overflow:hidden;
+}
+.weatherCard{
+    width:18rem;
+    padding:2rem;
+    margin:1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:column wrap;
+    background: linear-gradient(to right top, #36e9d1, #2ce4c2, #27deb3, #28d9a3, #2ed392);
+    border-radius:10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.errPlace{
+    background-color:#f0a;
+}

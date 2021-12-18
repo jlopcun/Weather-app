@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/c3dec90392.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather.jlopcuns</title>
+</head>
+<body>
+    <nav class="topBar">
+        <img src="assets/icons8-weather.svg" class="icon" alt="icon">
+        <h1 class="title">Weather.jlopcuns</h1>
+    </nav>
+    <main class="mainContent">
+        <input type="text" class="placeName" id="placeName" placeholder="enter a city/country..." autocomplete="off">
+        <div class="weather-cardContainer" id="weather-cardContainer">
+        </div>
+    </main>
+    <footer class="page-footer">
+        <a class="social_media" target="_blank" href="https://www.instagram.com/jlopcuns/"><i class="fab fa-instagram social-icon"></i></a>
+        <a class="social_media" target="_blank" href="https://github.com/jlopcun"><i class="fab fa-github social-icon"></i></a>
+        <a class="social_media" target="_blank" href="https://jlopcun.netlify.app"><i class="far fa-address-book social-icon"></i></a>
+    </footer>
+    <template id="weather-card__template">
+        <div class="weatherCard">
+            <h2 class="Place" id="place"></h2>
+            <p class="country" id="country"></p>
+            <img class="weather-icon" id="weather-icon" alt="weather-icon" src="">
+            <p class="temp" id="Act-temp"></p>
+            <p class="temp" id="Max-temp"></p>
+            <p class="temp" id="Min-temp"></p>
+        </div>
+    </template>
+    <script src="main.js"></script>
+</body>
+</html>
